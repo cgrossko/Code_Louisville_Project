@@ -7,16 +7,17 @@
         <link rel="stylesheet" href="css/main.css">
           <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        
     </head>
     <body>
         <div class="contain-to-grid">
             <header>
                 <a href="index.html" id="logo">
                         <div class="page-header">
-                            <h1>Grosskopf and Sons</h1>
-                            <h4>Bathtub Protection Specialists</h4>
+                            <div class="header">
+                                <h1>Grosskopf and Sons</h1>
+                                <h4>Bathtub Protection Specialists</h4>
+                            </div>
                         </div>
                     </a>
                     <nav class="navbar">
@@ -48,6 +49,15 @@
                 <p>&copy; 2015 Grosskopf and Sons.</p>
             </footer>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script>
+            $('.header').sticky({
+                getWidthFrom: '.contain-to-grid',
+                responsiveWidth: true
+            });
+        </script>
     </body>
     
 </html>

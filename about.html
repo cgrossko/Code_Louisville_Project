@@ -7,16 +7,17 @@
         <link rel="stylesheet" href="css/main.css">
           <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
     </head>
     <body>
         <div class="contain-to-grid">
             <header>
                 <a href="index.html" id="logo">
                         <div class="page-header">
-                            <h1>Grosskopf and Sons</h1>
-                            <h4>Bathtub Protection Specialists</h4>
+                            <div class="header">
+                                <h1>Grosskopf and Sons</h1>
+                                <h4>Bathtub Protection Specialists</h4>
+                            </div>
                         </div>
                     </a>
                     <nav class="navbar">
@@ -33,8 +34,8 @@
             <section>
                 <img src="img/th-3.jpeg" alt="Photograph of business owners" class="business_photo">
                 <h3>About</h3>
-                <p class="lead">With over 30 years of experience in the construction industry, Christopher Grosskopf has deep knowledge in every aspect of the home building process, and for all those years there was an issue that he kept running into: having to pay to repair scratched or damaged bathtubs and when he discovered that there was a product capable of eleminating this issue, he jumped on the opportunity to provide a much needed service for others. Christopher has passed on his knowledge and hard working ability to his sons, Christian and Gabe, and together the Grosskopfs have the knowledge and know-how to protect any tub!</p>
-                <p class="lead">We currently only offer our services strictly in the Louisville/Southern Indiana area.  If you are a home builder and would like to contact us for our services, please see the <a href="contact.html"  class="selected"><span>Contact Us</span></a> page.</p>
+                <p class="lead">With over 30 years of experience in the construction industry, Christopher Grosskopf has deep knowledge in every aspect of the home building process. Throughout those years of home building, there was an issue that he kept running into: having to pay to repair scratched or damaged bathtubs and when he discovered that there was a product capable of eleminating this issue, he jumped on the opportunity to provide a much needed service for others. Christopher has passed on his knowledge and hard working ability to his sons, Christian and Gabe, and together the Grosskopfs have the knowledge and know-how to protect any tub!</p>
+                <p class="lead">We currently offer our services strictly in the Louisville/Southern Indiana area.  If you are a home builder and would like to contact us for our services, please see the <a href="contact.html"  class="selected"><span>Contact Us</span></a> page.</p>
                 <p class="lead">If you'd like to follow us on Twitter, our username is <a href="http://twitter.com/christiangkopf">@ChristianGkopf</a></p>
             </section>
             <footer>
@@ -43,6 +44,16 @@
                 <p>&copy; 2015 Grosskopf and Sons.</p>
             </footer>
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script>
+            $('.header').sticky({
+                getWidthFrom: '.contain-to-grid',
+                responsiveWidth: true
+            });
+        </script>
     </body>
     
 </html>

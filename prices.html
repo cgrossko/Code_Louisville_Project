@@ -7,18 +7,20 @@
         <link rel="stylesheet" href="css/main.css">
           <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        
     </head>
     <body>
         <div class="contain-to-grid">
             <header>
                 <a href="index.html" id="logo">
                         <div class="page-header">
-                            <h1>Grosskopf and Sons</h1>
-                            <h4>Bathtub Protection Specialists</h4>
+                            <div class="header">
+                                <h1>Grosskopf and Sons</h1>
+                                <h4>Bathtub Protection Specialists</h4>
+                            </div>
                         </div>
                     </a>
+                    <div class="overlay">
                     <nav class="navbar">
                         <ul class="nav nav-pills nav-justified">
                             <li><a href="index.html">Home</a></li>
@@ -27,6 +29,7 @@
                             <li><a href="prices.html" class="selected">Prices</a></li>
                         </ul>
                     </nav>
+                    </div>
             </header>
         </div>
         
@@ -36,30 +39,16 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Row</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
+                                <th></th>
+                                <th scope="col">First Tub</th>
+                                <th scope="col">Subsequent Tubs</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>John</td>
-                                <td>Carter</td>
-                                <td>johncarter@mail.com</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Peter</td>
-                                <td>Parker</td>
-                                <td>peterparker@mail.com</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>John</td>
-                                <td>Rambo</td>
-                                <td>johnrambo@mail.com</td>
+                                <th scope="row">Prices</th>
+                                <td>$84.00</td>
+                                <td>$72.00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -73,7 +62,16 @@
                 <a href="http://facebook.com/christian.grosskopf.9"><img src="img/th-2.jpeg" alt="Facebook Logo" class="social_icon"></a>
                 <p>&copy; 2015 Grosskopf and Sons.</p>
             </footer>
-        
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.sticky.js"></script>
+            <script>
+                $('.header').sticky({
+                    getWidthFrom: '.contain-to-grid',
+                    responsiveWidth: true
+                });
+            </script>
      </body>
 </html>       
         
