@@ -91,29 +91,6 @@ nav a {
     padding: 15px 10px;
 }
 
-#home::before {
-    content: url(../img/house34.png);
-    margin-right: 12px;
-    margin: 0 10px 10px 0;
-}
-    
-#about::before {
-    content: url(../img/multiple25.png);
-    margin-right: 12px;
-    margin: 0 10px 10px 0;
-}
-
-#contact::before {
-    content: url(../img/telephone5.png);
-    margin-right: 12px;
-    margin: 0 10px 10px 0;
-}
-
-#prices::before {
-    content: url(../img/dollar185.png);
-    margin-right: 12px;
-    margin: 0 10px 10px 0;
-}
 /*******************
 FOOTER
 *******************/
